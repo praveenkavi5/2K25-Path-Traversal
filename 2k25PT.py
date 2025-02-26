@@ -91,9 +91,14 @@ def run_path_traversal_test(base_url, param, wordlist):
 
 # User input and execution
 def main():
-    print("=== Path Traversal Vulnerability Scanner (2025 Edition) ===")
-    print("WARNING: Use only on systems you own or have explicit permission to test!")
+    print("==========================================================")
+    print("    Path Traversal Vulnerability Scanner (2025 Edition)   ")
     print("----------------------------------------------------------")
+    print("     Developed by Praveen Kavinda  ")
+    print("   Website: https://prav33n.com")
+    print("----------------------------------------------------------")
+    print("WARNING: Use only on systems you own or have explicit permission to test!")
+    print("==========================================================")
 
     base_url = input("Enter the base URL (e.g., http://prav33n.me/download): ").strip()
     param = input("Enter the parameter to test (e.g., file): ").strip()
