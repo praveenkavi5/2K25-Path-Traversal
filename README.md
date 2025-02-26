@@ -1,6 +1,6 @@
 # Path Traversal Vulnerability Scanner (2025 Edition)
 
-A lightweight, Python-based tool designed to test web applications for path traversal vulnerabilities. This script sends crafted payloads to a target URL, analyzes responses, and identifies potential security weaknesses that could allow unauthorized file access.
+A lightweight, Python-based tool designed to test path traversal vulnerabilities. This script sends crafted payloads to a target URL, analyzes responses, and identifies potential security weaknesses that could allow unauthorized file access.
 
 ## Features
 - **Extensive Payloads**: Includes a default wordlist with common traversal patterns (e.g., `../`, `%2e%2e%2f`) and supports custom wordlists.
@@ -12,7 +12,7 @@ A lightweight, Python-based tool designed to test web applications for path trav
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/path-traversal-scanner.git
+   git clone https://github.com/praveenkavi5/path-traversal-scanner.git
    cd path-traversal-scanner
    ```
 2. Install dependencies:
@@ -21,7 +21,7 @@ A lightweight, Python-based tool designed to test web applications for path trav
    ```
 3. Run the script:
    ```bash
-   python path_traversal_scanner.py
+   python 2k25PT.py
    ```
 4. Follow the prompts to enter the target URL, parameter, and optional custom wordlist path.
 
