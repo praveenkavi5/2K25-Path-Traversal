@@ -91,7 +91,7 @@ def main():
     print("   Developed by Praveen Kavinda")
     print("   Website: https://prav33n.me")
     print("----------------------------------------------------------")
-    print("|\ WARNING: Use only on systems you own or have explicit permission to test! /|")
+    print("~ WARNING: Use only on systems you own or have explicit permission to test! ~")
     print("==========================================================")
 
     base_url = input("Enter the base URL (e.g., http://prav33n.me/download): ").strip()
